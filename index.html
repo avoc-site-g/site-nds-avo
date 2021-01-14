@@ -33,45 +33,6 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    
-    <script>
-const keySequence = [];
-let konamiString = '';
-const konamiCode = [
-  'ArrowUp',
-  'ArrowUp',
-  'ArrowDown',
-  'ArrowDown',
-  'ArrowLeft',
-  'ArrowRight',
-  'ArrowLeft',
-  'ArrowRight',
-  'b',
-  'a'
-];
-
-document.addEventListener('keydown', function(e) {
-  // To make sure it freezes the scroll when 
-  // the first two keypresses are "ArrowUp"
-  if (keySequence[0] === 'ArrowUp' && keySequence[1] === 'ArrowUp' && e.key === 'ArrowDown') {
-    e.preventDefault();
-  }
-});
-
-document.addEventListener('keyup', function(e) {
-  const doc = document.documentElement;
-
-    keySequence.push(e.key);
-    keySequence.splice(-konamiCode.length - 1, keySequence.length - konamiCode.length);
-    konamiString = konamiCode.join('');
-
-    if (keySequence.join('').includes(konamiString)) {
-      alert("code");
-      document.getElementById("nds-header-logo")
-    }
-  
-});
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
