@@ -1,18 +1,7 @@
 
 const keySequence = [];
 let konamiString = '';
-const konamiCode = [
-  'ArrowUp',
-  'ArrowUp',
-  'ArrowDown',
-  'ArrowDown',
-  'ArrowLeft',
-  'ArrowRight',
-  'ArrowLeft',
-  'ArrowRight',
-  'b',
-  'a'
-];
+const konamiCode = ['ArrowUp', 'ArrowUp',  'ArrowDown',  'ArrowDown',  'ArrowLeft',  'ArrowRight', 'ArrowLeft', 'ArrowRight',  'b',  'a'];
 
 document.addEventListener('keydown', function(e) {
   // To make sure it freezes the scroll when 
@@ -30,8 +19,9 @@ document.addEventListener('keyup', function(e) {
     konamiString = konamiCode.join('');
 
     if (keySequence.join('').includes(konamiString)) {
+      logger.info("### KONAMI CODE ###");
       document.getElementById("nds-header-logo").style.transform = "rotate(90deg)";
-      document.getElementById("nds-header-logo").style.background = "#AAA"
+      document.getElementById("nds-header-logo").style.background = "#CCC"
     }
   
 });
