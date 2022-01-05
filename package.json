@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "sass dev/styles.scss assets/styles.css",
+    "watch": "sass --watch dev/styles.scss assets/styles.css"
+  },
+  "dependencies": {
+    "bootstrap": "5.1.3",
+    "sass": "1.45.1"
+  }
+}

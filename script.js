@@ -1,7 +1,25 @@
+// date copyright
+document.getElementById("nds-year").innerHTML= new Date().getFullYear();
 
+// leafletjs
+var map = L.map('nds-map-contact', {
+  center: [45.188953, 5.724911],
+  zoom: 16,
+  attributionControl:false
+});
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{styleId}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: '',
+    maxZoom: 18,
+    styleId: 'thomasnds/cky1g0bnd9yzb14nubr2a3pbe',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoidGhvbWFzbmRzIiwiYSI6ImNreTFmdmxkMTBiMnoydXBueThhbDV3NWoifQ.CPCm3H034JEVWDQthth7dA'
+}).addTo(map);
+// Konami
 const keySequence = [];
-let konamiString = '';
 const konamiCode = ['ArrowUp', 'ArrowUp',  'ArrowDown',  'ArrowDown',  'ArrowLeft',  'ArrowRight', 'ArrowLeft', 'ArrowRight',  'b',  'a'];
+const konamiString = konamiCode.join('');
 
 document.addEventListener('keydown', function(e) {
   // To make sure it freezes the scroll when 
@@ -12,16 +30,13 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keyup', function(e) {
-  const doc = document.documentElement;
 
     keySequence.push(e.key);
     keySequence.splice(-konamiCode.length - 1, keySequence.length - konamiCode.length);
-    konamiString = konamiCode.join('');
 
     if (keySequence.join('').includes(konamiString)) {
-      logger.info("### KONAMI CODE ###");
-      document.getElementById("nds-header-logo").style.transform = "rotate(90deg)";
-      document.getElementById("nds-header-logo").style.background = "#CCC"
+      console.info("### KONAMI CODE ###");
+      document.getElementById("nds-logo-img").style.transform = "rotate(90deg)";
+      document.getElementById("nds-logo-img").style.background = "lightblue"
     }
-  
 });

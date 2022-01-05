@@ -1,0 +1,31 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.nds-logo {
+  font-size: 2rem;
+}
+
+.nds-navbar {
+  box-shadow: #707070 0 2px 6px 0;
+}
+
+.nds-main {
+  margin-top: 5.5rem;
+}
+
+.nds-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nds-map-contact {
+  height: 50vh;
+}
+
+.nds-contact-label {
+  text-decoration: underline;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+  display: flex;
+  font-size: 0.95rem;
+}
