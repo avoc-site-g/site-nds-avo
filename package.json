@@ -4,7 +4,10 @@
     "watch": "sass --watch dev/styles.scss assets/styles.css"
   },
   "dependencies": {
-    "bootstrap": "5.1.3",
+    "bootstrap": "5.1.3"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "0.12.1",
     "sass": "1.45.1"
   }
 }
