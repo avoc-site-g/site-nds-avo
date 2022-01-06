@@ -1,5 +1,12 @@
+/**
+ * Leaflet variable CDN
+ */
+declare var L: any;
+
+declare var document: Document;
+
 // date copyright
-document.getElementById("nds-year").innerHTML= new Date().getFullYear();
+document.getElementById("nds-year").innerHTML= "" + new Date().getFullYear();
 
 // leafletjs
 var map = L.map('nds-map-contact', {
@@ -16,8 +23,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{styleId}/tiles/{z}/{x}/{y}?access
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoidGhvbWFzbmRzIiwiYSI6ImNreTFmdmxkMTBiMnoydXBueThhbDV3NWoifQ.CPCm3H034JEVWDQthth7dA'
 }).addTo(map);
+
 // Konami
-const keySequence = [];
+const keySequence: string[] = [];
 const konamiCode = ['ArrowUp', 'ArrowUp',  'ArrowDown',  'ArrowDown',  'ArrowLeft',  'ArrowRight', 'ArrowLeft', 'ArrowRight',  'b',  'a'];
 const konamiString = konamiCode.join('');
 
