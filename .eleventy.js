@@ -10,7 +10,8 @@ module.exports = function (eleventyConfig) {
     });
 
     return {
-        dir: {
+        "dataTemplateEngine": "njk",
+        "dir": {
             input: "templates",
             output: "docs"
         }

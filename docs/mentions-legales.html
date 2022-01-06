@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fr">
-    {% block head %}
+    
         <head>
             <!-- Required meta tags -->
             <meta charset="utf-8">
@@ -13,18 +13,57 @@
                 href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
                 integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
                 crossorigin=""/>
-            <title>{{ title }}</title>
+            <title>Nunes avocat</title>
         </head>
-    {% endblock %}
+    
     <body>
         
-        {% block navbar %} {% endblock %}
+        
+    <div class=" navbar navbar-expand-lg navbar-light fixed-top nds-navbar bg-light">
+        <div class="container">
+        <a class="navbar-brand nds-logo" href="#">
+            <!-- logo -->
+            <img id="nds-logo-img" src="assets/logo.svg" alt="" aria-hidden="true" width="50" height="50"
+            class="d-inline-block align-text-top">
+            Nunes Avocat
+        </a>
+        </div><!-- container-fluid -->
+
 
         <div class=" nds-main">
-            {{ content | safe }}
+            
+<div class="container p-3">
+  <span style="font-size: 2.5rem;" class="m-3"> Mentions légales</span>
+</div>
+
+
+
+
         </div><!-- nds-main -->
 
-        {% block footer %} {% endblock %}
+        
+    <footer class="footer bg-dark text-light nds-footer">
+        <div class="container">
+            <div class="text-center mb-3">
+                <img
+                    id="nds-logo-img"
+                    src="assets/logo.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="75"
+                    height="75"
+                    class=""
+                    style="filter: invert(90%)">
+            </div>
+            <p class="text-center">
+                Maitre Pauline Nunes - Avocat en droit du travail et de la sécurité sociale au Barreau de Grenoble.
+            </p>
+            <p class="text-center pt-1">
+                <a href="/mentions-legales.html">Mentions légales</a><br/> Nunes-avocat© 2020-<span id="nds-year"></span>
+            </p>
+        </div>
+    </footer>
+
 
         <!-- Bootstrap Bundle with Popper -->
         <script
