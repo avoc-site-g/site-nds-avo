@@ -5,9 +5,6 @@ declare var L: any;
 
 declare var document: Document;
 
-// date copyright
-document.getElementById("nds-year").innerHTML= "" + new Date().getFullYear();
-
 // leafletjs
 var map = L.map('nds-map-contact', {
   center: [45.188953, 5.724911],

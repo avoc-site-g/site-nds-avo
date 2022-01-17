@@ -11120,6 +11120,11 @@ textarea.form-control-lg {
 }
 .nds-logo {
   font-size: 2rem;
+  font-family: "Hahmlet", Georgia, "Times New Roman", Times, serif;
+}
+
+.nds-font-sans-serif {
+  font-family: "Hahmlet", Georgia, "Times New Roman", Times, serif;
 }
 
 .nds-navbar {
@@ -11140,12 +11145,13 @@ textarea.form-control-lg {
 }
 
 .nds-contact-label {
-  text-decoration: underline;
+  text-transform: uppercase;
   align-items: center;
   align-content: space-between;
   flex-direction: row;
   display: flex;
   font-size: 0.95rem;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=styles.css.map */

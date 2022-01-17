@@ -1,7 +1,7 @@
 # Dépendances
 - bootstrap : librairie de composant graphique
 - eleventy : compilateur de site statique
-- nunjucks : moteur de template html
+- liquid : moteur de template html
 - sass : pré-processeur CSS
 - typescript
 
