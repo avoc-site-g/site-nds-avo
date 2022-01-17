@@ -1,0 +1,47 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "image": [],
+    "logo": "nunes-avocat.fr/assets/logo.svg",
+    "name": "{{global.denominationShort}}",
+    "description": "{{global.description}}",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{global.adresse}}",
+        "addressLocality": "{{global.city}}",
+        "postalCode": "{{global.codePostal}}",
+        "addressCountry": "FR"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.761293,
+        "longitude": -73.982294
+    },
+    "url": "nunes-avocat.fr",
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "9:00",
+            "closes": "12:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "13:30",
+            "closes": "18:30"
+        }
+    ]
+}

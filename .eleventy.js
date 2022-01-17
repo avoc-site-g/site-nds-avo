@@ -21,8 +21,9 @@ module.exports = function (eleventyConfig) {
     });
 
     return {
-        "dataTemplateEngine": "liquidjs",
+        "dataTemplateEngine": "liquid",
         "dir": {
+            data: "_data",
             input: "templates",
             output: "docs"
         }
