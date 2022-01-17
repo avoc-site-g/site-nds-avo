@@ -12,5 +12,5 @@
 
 # Commandes
 
-- `npm start` : lance un serveur local sur localhost:8080, watch et compile eleventy, sass et typescript.
+- `npm start` : lance un serveur local sur [localhost:8080](http://localhost:8080/), watch et compile eleventy, sass et typescript.
 - `npm run build` : Compile en une fois l'ensemble du site.
